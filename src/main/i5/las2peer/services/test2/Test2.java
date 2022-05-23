@@ -1,4 +1,4 @@
-package i5.las2peer.services.test;
+package i5.las2peer.services.test2;
 
 
 import java.net.HttpURLConnection;
@@ -47,13 +47,13 @@ import java.util.Map;
  */
 @ServicePath("test")
 @ManualDeployment
-public class Test extends RESTService {
+public class Test2 extends RESTService {
 
 
 
 
 
-  public Test() {
+  public Test2() {
 	super();
     // read and set properties values
     setFieldValues();
@@ -71,16 +71,16 @@ public class Test extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "6", version = "$Metadata_Version$",
-          description = "$Metadata_Description$",
-          termsOfService = "$Metadata_Terms$",
+      info = @Info(title = "6", version = "",
+          description = "",
+          termsOfService = "",
           contact = @Contact(name = "", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
               url = "https://github.com/PhilCAEOrg2/microservice-6/blob/master/LICENSE.txt") ) )
   @Path("/")
   public static class RootResource {
 
-    private final Test service = (Test) Context.getCurrent().getService();
+    private final Test2 service = (Test2) Context.getCurrent().getService();
 
     
 
